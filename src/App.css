@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.links {
+  background-color: #cd99ae;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.btn {
+  background-color: #cd99ae;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
