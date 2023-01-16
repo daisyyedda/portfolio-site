@@ -38,7 +38,7 @@
 }
 
 .links {
-  background-color: #cd99ae;
+  background-color: #443e3e;
   color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -47,13 +47,31 @@
   border-radius: 10px;
   font-weight: bold;
   font-size: 1.3em;
+
 }
 
 .btn {
-  background-color: #cd99ae;
+  background-color: #443e3e;
   color: #ffffff;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 10px;
   border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+ 
+.pos {
+  text-align: center;
+  display: flex;
+  color: #ffffff;
+  justify-content: space-around;
+  padding: 15px;
+  background: hsla(180, 2%, 65%, 0.2);
+}
+
+.company {
+  color: #ffffff;
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+  overflow: "hidden",
 }

@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin, BsFileEarmarkTextFill } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsFileEarmarkTextFill, BsFillCameraFill } from "react-icons/bs";
 import Resume from '../Chun Ye Resume.pdf';
 
 export const Contact = () => {
@@ -12,13 +12,19 @@ export const Contact = () => {
     return window.open('https://www.linkedin.com/in/chun-ye-5766ba18b/');
   }
 
+  const toInstagram = () => {
+    return window.open('https://www.instagram.com/wizmyphone/');
+  }
+
   return (
   <div className='content' class='animate__animated animate__bounceInUp' style={{color: "#754E4E"}}>
-    <button className="btn" onClick={toResume}> <BsFileEarmarkTextFill style={{size: "large"}}/>Resume</button>
+    <button className="btn" onClick={toResume}> <BsFileEarmarkTextFill /> Resume </button>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button className="btn"  onClick={toGitHub}> <BsGithub style={{size: "large"}}/> GitHub </button>
+    <button className="btn"  onClick={toGitHub}> <BsGithub /> GitHub </button>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button className="btn" onClick={toLinkedIn}><BsLinkedin style={{size: "large"}}/> LinkedIn </button>
+    <button className="btn" onClick={toLinkedIn}><BsLinkedin /> LinkedIn </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button className="btn" onClick={toInstagram}><BsFillCameraFill /> Photography </button>
   </div>
   );
 }
