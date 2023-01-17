@@ -23,6 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "homepage": "https://daisyyedda.github.io/portfolio-site/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
