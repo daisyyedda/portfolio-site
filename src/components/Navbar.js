@@ -1,12 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export const Navbar = () => {
-  const [textDecoration, setTextDecoration] = useState("none");
-
-  const handleClick = () => {
-    setTextDecoration("underline");
-  }
 
   return (  
     <div className="navbar">
