@@ -26,7 +26,7 @@ export const About = () => {
       <br/>
       <Contact />
       <br/>
-      <img src={profile} alt="Daisy Profile Pic" style={{borderRadius: "50%"}}/>
+      <img src={profile} alt="Daisy Profile Pic" style={{borderRadius: "50%", width: "50%"}}/>
       <Copyright />
     </div>
   );
