@@ -10,7 +10,7 @@ export const About = () => {
   const [email, seeEmail] = useState("Click to see email");
 
   return (
-    <div className='content' class='animate__animated animate__bounceInUp' style={{color: "white"}}>
+    <div className='content animate__animated animate__bounceInUp' style={{color: "white"}}>
       <h1>Hi there, thanks for visiting my site.</h1>
       <button className="btn" 
         onClick={() => {

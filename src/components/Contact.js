@@ -17,7 +17,7 @@ export const Contact = () => {
   }
 
   return (
-  <div className='content' class='animate__animated animate__bounceInUp' style={{color: "#754E4E"}}>
+  <div className='content animate__animated animate__bounceInUp' style={{color: "#754E4E"}}>
     <button className="btn" onClick={toResume}> <BsFileEarmarkTextFill /> Resume </button>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button className="btn"  onClick={toGitHub}> <BsGithub /> GitHub </button>
