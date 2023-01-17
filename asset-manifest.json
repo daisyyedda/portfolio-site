@@ -1,13 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.9e858729.js",
+    "main.css": "/static/css/main.d85b2dff.css",
+    "main.js": "/static/js/main.958311ed.js",
+    "static/media/ucharity.png": "/static/media/ucharity.1c81571576e9e9f9430f.png",
+    "static/media/reversi.png": "/static/media/reversi.a1aa2bb23473969787df.png",
+    "static/media/profile.jpeg": "/static/media/profile.db05790b2bee4fd99952.jpeg",
+    "static/media/shop.jpeg": "/static/media/shop.a88909ad506e9ceb9fb2.jpeg",
+    "static/media/cc3k.png": "/static/media/cc3k.400f3105ee9c9e2ad315.png",
+    "static/media/Chun Ye Resume.pdf": "/static/media/Chun Ye Resume.d5632bd115c0d898aa89.pdf",
+    "static/media/fordpro.png": "/static/media/fordpro.2c52b123640005a0b124.png",
+    "static/media/bg.png": "/static/media/bg.ed532d24666d256f5236.png",
+    "static/media/rf.png": "/static/media/rf.367a5d060b9bb69e8c65.png",
+    "static/media/bmo.jpeg": "/static/media/bmo.532eab816913cde648e9.jpeg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.9e858729.js.map": "/static/js/main.9e858729.js.map"
+    "main.d85b2dff.css.map": "/static/css/main.d85b2dff.css.map",
+    "main.958311ed.js.map": "/static/js/main.958311ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9e858729.js"
+    "static/css/main.d85b2dff.css",
+    "static/js/main.958311ed.js"
   ]
 }
