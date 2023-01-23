@@ -8,7 +8,6 @@ export const Navbar = () => {
     });
     e.target.style.borderBottom = "2px solid white";
   }
-
   return (  
     <div className="navbar">
       <div className="links">
