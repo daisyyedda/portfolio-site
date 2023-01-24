@@ -1,6 +1,5 @@
 # My Personal Website
 
-Built with ReactJS (from scratch). \
 Link: https://daisy-personal-site.web.app/
 
 ## Available Scripts
