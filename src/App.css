@@ -39,37 +39,35 @@
 
 .links {
   background-color: #443e3e;
-  color: #ffffff;
+  color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 15px;
   border-radius: 10px;
-  font-weight: bold;
   font-size: 1.3em;
 
 }
 
 .btn {
   background-color: #443e3e;
-  color: #ffffff;
+  color: black;
   border-radius: 10px;
   padding: 10px;
-  font-weight: bold;
   font-size: 1.3em;
 }
  
 .pos {
   text-align: center;
   display: flex;
-  color: #ffffff;
+  color: black;
   justify-content: space-around;
   padding: 15px;
   background: hsla(180, 2%, 65%, 0.2);
 }
 
 .company {
-  color: #ffffff;
+  color: black;
   width: 150px;
   height: 80px;
   border-radius: 10px;
@@ -77,8 +75,12 @@
 }
 
 .project {
-  color: #ffffff;
+  color: black;
   height: 400px;
   border-radius: 10px;
   overflow: "hidden",
+}
+
+.contactIcon {
+  size: 20em;
 }

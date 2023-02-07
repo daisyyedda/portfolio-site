@@ -1,4 +1,5 @@
-import { BsGithub, BsLinkedin, BsFileEarmarkTextFill, BsFillCameraFill } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 import Resume from '../Chun Ye Resume.pdf';
 
 export const Contact = () => {
@@ -16,15 +17,22 @@ export const Contact = () => {
     return window.open('https://www.instagram.com/wizmyphone/');
   }
 
+  const toEmail = () => {
+    return window.open('mailto:c42ye@uwaterloo.ca');
+  }
+
   return (
-  <div className='content animate__animated animate__bounceInUp' style={{color: "#754E4E"}}>
-    <button className="btn" onClick={toResume}> <BsFileEarmarkTextFill /> Resume </button>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button className="btn"  onClick={toGitHub}> <BsGithub /> GitHub </button>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button className="btn" onClick={toLinkedIn}><BsLinkedin /> LinkedIn </button>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button className="btn" onClick={toInstagram}><BsFillCameraFill /> Photography </button>
+  <div className='contactIcon' style={{position:"absolute", left:0, bottom:0, right:0}}>
+    <BsGithub onClick={toGitHub}/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <BsLinkedin onClick={toLinkedIn}/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <BsInstagram onClick={toInstagram}/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <MdEmail onClick={toEmail}/>
+    <p style={{fontSize: "15px", fontWeight: "bold"}}>
+      &copy; Chun Ye 2023 
+    </p>
   </div>
   );
 }
