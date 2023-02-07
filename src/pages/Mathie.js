@@ -20,7 +20,7 @@ export const Mathie = () => {
   };
 
   return (
-    <div className='content animate__animated animate__bounceInUp' style={{color: "white"}}>
+    <div className='content animate__animated animate__bounceInUp'>
       <h2 className='pos'>Enter/select your favourite integer:</h2>
       <input
         type="number"

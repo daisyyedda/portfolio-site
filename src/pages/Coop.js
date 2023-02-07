@@ -4,7 +4,6 @@ import '../App.css';
 import { useState } from 'react';
 import { Contact } from '../components/Contact';
 import Stack from 'react-bootstrap/Stack';
-import { Copyright } from '../components/Copyright';
 
 export const Coop = () => {
   const ford = require('../img/fordpro.png');
@@ -30,7 +29,7 @@ export const Coop = () => {
   }
 
   return (
-    <div className='content animate__animated animate__bounceInUp' style={{color: "white"}}>
+    <div className='content animate__animated animate__bounceInUp'>
       <h2>I am interested in software development, combinatorics & optimization (who doesn't adore lin alg?), and consulting.</h2>
       <h3> Click the logos for more details.</h3>
       <Stack gap={200}>
@@ -86,7 +85,6 @@ export const Coop = () => {
       </Stack>
       <br/><br/><br/>
       <Contact />
-      <Copyright />
     </div>
   );
 }

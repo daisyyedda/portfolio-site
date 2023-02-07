@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Resume from '../Chun Ye Resume.pdf';
 
 export const Navbar = () => {
   const underLine = (e) => {
@@ -7,6 +8,10 @@ export const Navbar = () => {
       link.style.borderBottom = "none";
     });
     e.target.style.borderBottom = "2px solid white";
+  }
+
+  const toResume = () => {
+    return window.open(Resume);
   }
 
   return (  
@@ -18,7 +23,7 @@ export const Navbar = () => {
         &nbsp;&nbsp;&nbsp;
         <Link to="/project" style={{color: "white", textDecoration: "none"}} onClick={underLine}> Projects </Link>
         &nbsp;&nbsp;&nbsp;
-        <Link to="/mathie" style={{color: "white", textDecoration: "none"}} onClick={underLine}> Mathie? </Link>
+        <Link onClick={toResume} style={{color: "white", textDecoration: "none"}}> Resume </Link>
       </div>
     </div>
   );

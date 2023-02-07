@@ -3,7 +3,6 @@ import 'animate.css';
 import '../App.css';
 import { Contact } from '../components/Contact';
 import Stack from 'react-bootstrap/Stack';
-import { Copyright } from '../components/Copyright';
 
 export const Project = () => {
   const cc3k = require('../img/cc3k.png');
@@ -28,7 +27,7 @@ export const Project = () => {
   }
 
   return (
-    <div className='content animate__animated animate__bounceInUp' style={{color: "white"}}>
+    <div className='content animate__animated animate__bounceInUp'>
       <h2>I enjoy doing side projects to enhance my knowledge in full-stack development and empower the communities.</h2>
       <h3>Click the pictures to view project repositories.</h3>
       <Stack gap={200}>
@@ -52,7 +51,6 @@ export const Project = () => {
       </Stack>
       <br/><br/><br/>
       <Contact />
-      <Copyright />
     </div>
   );
 }

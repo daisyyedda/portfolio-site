@@ -5,7 +5,6 @@ import { Navbar } from './components/Navbar';
 import { Project } from './pages/Project';
 import { About } from './pages/About';
 import { Coop } from './pages/Coop';
-import { Mathie } from './pages/Mathie';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path="/" element={< About />} />
           <Route path="/project" element={< Project />} />
           <Route path="/coop" element={< Coop />} />
-          <Route path="/mathie" element={< Mathie />} />
         </Routes>
       </Router>
     </div>
