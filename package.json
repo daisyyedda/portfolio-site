@@ -11,12 +11,17 @@
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
     "firebase": "^9.16.0",
+    "next-gallery": "^1.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
+    "react-carousel-minimal": "^1.4.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-image-viewer-dv": "^1.0.2",
+    "react-photo-album": "^2.0.1",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
+    "react-useanimations": "^2.10.0",
     "rsuite": "^5.24.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4",
@@ -49,6 +54,8 @@
     ]
   },
   "devDependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/styled": "^11.10.5",
     "gh-pages": "^4.0.0"
   }
 }

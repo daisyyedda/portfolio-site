@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
-import { Project } from './pages/Project';
+import { Photography } from './pages/Photography';
 import { About } from './pages/About';
 import { Coop } from './pages/Coop';
 
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={< About />} />
-          <Route path="/project" element={< Project />} />
+          <Route path="/photo" element={< Photography />} />
           <Route path="/coop" element={< Coop />} />
         </Routes>
       </Router>

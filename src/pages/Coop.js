@@ -1,5 +1,4 @@
 import React from 'react';
-import 'animate.css';
 import '../App.css';
 import { useState } from 'react';
 import { Contact } from '../components/Contact';
@@ -29,15 +28,15 @@ export const Coop = () => {
   }
 
   return (
-    <div className='content animate__animated animate__bounceInUp'>
+    <div style={{fontFamily: "Arial"}}>
       <h2>I am interested in software development, combinatorics & optimization (who doesn't adore lin alg?), and consulting.</h2>
-      <h3> Click the logos for more details.</h3>
+      <p> Click the logos for more details.</p>
       <Stack gap={200}>
         <div className="bg-light border">
           <h3 className='pos'>Software Engineer - Ford Pro (Jan 2023 - Present)</h3>
           <img className="company" alt="Ford Pro logo" src={ford} onClick={handleClick}></img> 
           {click ? 
-          <p className='animate__animated animate__bounceInRight'>
+          <p>
             • Embrace Agile-eXtreme Programming principles to deliver innovative software products for Ford Pro Tech.
           </p>  
            : null}
@@ -46,7 +45,7 @@ export const Coop = () => {
           <h3 className='pos'>Business Analyst - BMO Financial Group (Jan 2022 - Apr 2022)</h3>
           <img className="company" alt="BMO logo" src={bmo} onClick={handleClick2}></img>
           {click2 ? 
-          <p className='animate__animated animate__bounceInRight'>
+          <p>
             • Improved the performance of BMO Client Portal by testing persisting bugs and writing test cases in System
             Integration Testing, User Acceptance Testing, and Regression Testing cycles. 
             <br/> <br/>
@@ -59,7 +58,7 @@ export const Coop = () => {
           <h3 className='pos'>Consultant - Laurier Consulting Club (Sep 2021 - Dec 2021)</h3>
           <img className="company" alt="LCG logo" src={lcg} onClick={handleClick3}></img>
           {click3 ? 
-          <p className='animate__animated animate__bounceInRight'>
+          <p>
             • Consulted with stakeholders to analyze companies’ demographics and market development plans.
             <br/> <br/>
             • Designed and implemented strategies for an AI start-up to target small to medium e-commerce businesses.
@@ -71,7 +70,7 @@ export const Coop = () => {
           <h3 className='pos'>Associate Consultant - RecruitFirst (May 2021 - Aug 2021)</h3> 
           <img className="company" alt="RF logo" src={rf} onClick={handleClick4}></img>
           {click4 ? 
-          <p className='animate__animated animate__bounceInRight'>
+          <p>
             • Analyzed market trends and opportunities for FMCG industries to implement sustainable and long-term CRM strategies for the clients.
             <br/> <br/>
             • Collected, classified, and organized relevant candidate information to meet the hiring needs of the clients.
@@ -81,7 +80,7 @@ export const Coop = () => {
             • Expanded the team’s existing candidate database by roughly 20% via researching and talent landscaping.
           </p> : null}
         </div>
-        
+  
       </Stack>
       <br/><br/><br/>
       <Contact />

@@ -1,11 +1,7 @@
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import Resume from '../Chun Ye Resume.pdf';
 
 export const Contact = () => {
-  const toResume = () => {
-    return window.open(Resume);
-  }
   const toGitHub = () => {
     return window.open('https://github.com/daisyyedda');
   }
@@ -22,7 +18,7 @@ export const Contact = () => {
   }
 
   return (
-  <div className='contactIcon' style={{position:"absolute", left:0, bottom:0, right:0}}>
+  <div className='contactIcon' style={{position:"relative", fontFamily: "Arial"}}>
     <BsGithub onClick={toGitHub}/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <BsLinkedin onClick={toLinkedIn}/>
@@ -30,8 +26,8 @@ export const Contact = () => {
     <BsInstagram onClick={toInstagram}/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <MdEmail onClick={toEmail}/>
-    <p style={{fontSize: "15px", fontWeight: "bold"}}>
-      &copy; Chun Ye 2023 
+    <p style={{fontSize: "15px"}}>
+      &copy; Chun Ye 2023
     </p>
   </div>
   );
