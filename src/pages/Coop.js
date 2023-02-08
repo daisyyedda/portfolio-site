@@ -30,7 +30,6 @@ export const Coop = () => {
   return (
     <div style={{fontFamily: "Arial"}}>
       <h2>I am interested in software development, combinatorics & optimization (who doesn't adore lin alg?), and consulting.</h2>
-      <p> Click the logos for more details.</p>
       <Stack gap={200}>
         <div className="bg-light border">
           <h3 className='pos'>Software Engineer - Ford Pro (Jan 2023 - Present)</h3>
