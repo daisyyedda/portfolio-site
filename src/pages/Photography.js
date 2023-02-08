@@ -4,7 +4,7 @@ import { Contact } from '../components/Contact';
 export const Photography = () => {
  const data = [
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
+      image: "../gallery/1.jpg",
       caption: "San Francisco"
     },
     {
