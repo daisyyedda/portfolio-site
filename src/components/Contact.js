@@ -18,15 +18,15 @@ export const Contact = () => {
   }
 
   return (
-  <div className='contactIcon' style={{position:"relative", fontFamily: "Arial"}}>
-    <BsGithub onClick={toGitHub}/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <BsLinkedin onClick={toLinkedIn}/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <BsInstagram onClick={toInstagram}/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <MdEmail onClick={toEmail}/>
-    <p style={{fontSize: "15px"}}>
+  <div className='contactIcon' style={{paddingTop: "30px"}}>
+    <BsGithub onClick={toGitHub} style={{fontSize: "20px"}}/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <BsLinkedin onClick={toLinkedIn} style={{fontSize: "20px"}}/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <BsInstagram onClick={toInstagram} style={{fontSize: "20px"}}/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <MdEmail onClick={toEmail} style={{fontSize: "20px"}}/>
+    <p style={{fontSize: "14px"}}>
       &copy; Chun Ye 2023
     </p>
   </div>

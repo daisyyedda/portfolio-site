@@ -68,10 +68,10 @@ export const Coop = () => {
   ));
 
   return (
-    <div style={{fontFamily: "Arial", marginTop: "40px"}}>
+    <div style={{fontFamily: "Arial", marginTop: "5%"}}>
       <h1>Computer Science & Business </h1>
       <p style={{fontSize: "20px"}}>Full Stack&nbsp;&nbsp;|&nbsp;&nbsp;Combinatorics&nbsp;&nbsp;|&nbsp;&nbsp;Consulting</p>
-      <Container class="animate__animated animate__fadeInLeft" style={{marginTop: "40px", marginRight: "150px", marginLeft: "150px"}}>
+      <Container class="animate__animated animate__fadeInLeft" style={{paddingTop: "5%", marginRight: "15%", marginLeft: "15%"}}>
       <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
         {cards}
       </SimpleGrid>

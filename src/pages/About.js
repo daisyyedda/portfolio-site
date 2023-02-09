@@ -12,7 +12,6 @@ export const About = () => {
       <br/>
       <h1>Chun (Daisy) Ye</h1>
       <p style={{fontSize: "20px"}}>Engineer&nbsp;&nbsp;|&nbsp;&nbsp;Aspiring Freelancer</p>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <Contact/>
     </div>
   );

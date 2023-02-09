@@ -24,13 +24,12 @@ const photos = [
 ];
 
 export const Photography = () => (
-  <div style={{marginTop: "40px", marginLeft: "100px", marginRight: "100px", fontFamily: 'Arial',}}>
+  <div style={{marginTop: "5%", fontFamily: 'Arial',}}>
     <h1>Empower the places where I go.</h1>
     <p style={{fontSize: "20px"}}>Shot&nbsp;&nbsp;|&nbsp;&nbsp;Inspo&nbsp;&nbsp;|&nbsp;&nbsp;Life</p>
-    <div class="animate__animated animate__fadeInLeft" >
+    <div class="animate__animated animate__fadeInLeft" style={{paddingTop: "5%", marginRight: "15%", marginLeft: "15%", fontFamily: 'Arial',}} >
       <PhotoAlbum  layout="rows" photos={photos}/>
     </div>
-    <br/><br/><br/>
-    <Contact />
+    <div><Contact /></div> 
   </div>
 );
