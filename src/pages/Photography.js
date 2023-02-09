@@ -1,5 +1,6 @@
 import { Contact } from '../components/Contact'; 
 import PhotoAlbum from "react-photo-album";
+import "animate.css";
 
 const photos = [
     { src: require("../gallery/1.jpeg"),  width: 1080, height: 780},
@@ -26,7 +27,9 @@ export const Photography = () => (
   <div style={{marginTop: "40px", marginLeft: "100px", marginRight: "100px", fontFamily: 'Arial',}}>
     <h1>Empower the places where I go.</h1>
     <p style={{fontSize: "20px"}}>Shot&nbsp;&nbsp;|&nbsp;&nbsp;Inspo&nbsp;&nbsp;|&nbsp;&nbsp;Life</p>
-    <PhotoAlbum layout="rows" photos={photos}/>
+    <div class="animate__animated animate__fadeInLeft" >
+      <PhotoAlbum  layout="rows" photos={photos}/>
+    </div>
     <br/><br/><br/>
     <Contact />
   </div>

@@ -8,7 +8,7 @@ export const About = () => {
 
   return (
     <div style={{color: "black", fontFamily: 'Arial', fontWeight: 'light'}}>
-      <img src={profile} alt="Daisy Profile Pic" style={{borderRadius: "50%", width: "300px", marginTop: "150px"}}/>
+      <img class="animate__animated animate__fadeInLeft" src={profile} alt="Daisy Profile Pic" style={{borderRadius: "50%", width: "300px", marginTop: "150px"}}/>
       <br/>
       <h1>Chun (Daisy) Ye</h1>
       <p style={{fontSize: "20px"}}>Engineer&nbsp;&nbsp;|&nbsp;&nbsp;Aspiring Freelancer</p>
