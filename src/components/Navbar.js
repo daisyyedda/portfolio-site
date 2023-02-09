@@ -13,7 +13,7 @@ export const Navbar = () => {
   }
 
   const toResume = () => {
-    return window.open(require('../Chun Ye Resume.pdf'));
+    return window.open('https://pdfhost.io/v/CHvvfaEc0_Chun_Ye_Resume');
   }
 
   const toPortfolio = () => {
