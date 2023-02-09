@@ -1,6 +1,6 @@
 # My Personal Website
 
-Link: https://daisy-personal-site.web.app/
+https://chun-ye.ca/
 
 ## Available Scripts
 
