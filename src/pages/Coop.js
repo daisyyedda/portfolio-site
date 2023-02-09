@@ -79,5 +79,6 @@ export const Coop = () => {
     <br/><br/><br/>
     <Contact />
     </div>
+
   );
 }

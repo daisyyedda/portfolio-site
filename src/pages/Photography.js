@@ -1,5 +1,6 @@
 import { Contact } from '../components/Contact'; 
 import PhotoAlbum from "react-photo-album";
+import "animate.css";
 
 const photos = [
     { src: require("../gallery/1.jpg"),  width: 1080, height: 780},
