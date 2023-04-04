@@ -1,6 +1,6 @@
 # My Personal Website
 
-https://main.dbym3k84goc1r.amplifyapp.com/
+https://www.chun-ye.ca/
 
 ## Available Scripts
 
