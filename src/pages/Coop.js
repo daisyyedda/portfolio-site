@@ -69,8 +69,8 @@ export const Coop = () => {
 
   return (
     <div style={{fontFamily: "Arial", marginTop: "5%"}}>
-      <h1>Computer Science & Business </h1>
-      <p style={{fontSize: "20px"}}>Full Stack&nbsp;&nbsp;|&nbsp;&nbsp;Combinatorics&nbsp;&nbsp;|&nbsp;&nbsp;Consulting</p>
+      <h1>I study computer science and business.</h1>
+      <p style={{fontSize: "20px"}}>Artificial Intelligence&nbsp;&nbsp;|&nbsp;&nbsp;Combinatorics&nbsp;&nbsp;|&nbsp;&nbsp;Finance</p>
       <Container class="animate__animated animate__fadeInLeft" style={{paddingTop: "5%", marginRight: "15%", marginLeft: "15%"}}>
       <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
         {cards}
@@ -79,6 +79,6 @@ export const Coop = () => {
     <br/><br/><br/>
     <Contact />
     </div>
-
   );
 }
+

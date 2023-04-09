@@ -1,56 +1,82 @@
 import React from 'react';
-import 'animate.css';
 import '../App.css';
 import { Contact } from '../components/Contact';
-import Stack from 'react-bootstrap/Stack';
+import 'animate.css';
+
+import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
+
+const mockdata = [
+  {
+    title: 'Fact-Checking Discord Bot',
+    image:
+      'https://media.ford.com/content/fordmedia/fna/us/en/media-kits/2021/ford-pro/jcr:content/content/media_section_17fa/media-section-parsys/textimage_3846/image.img.951.535.jpg/1644596432390.jpg',
+    tool: 'C#, Docker, OpenAI API',
+  },
+  {
+    title: 'Online Shop App',
+    image:
+      'https://mma.prnewswire.com/media/1962184/BMO_Financial_Group_Tis_the_Season_to__WrapTheGood__BMO_Expands.jpg?p=facebook',
+    tool: 'EJS, Express, JavaScript, MongoDB, Node.js',
+  },
+  {
+    title: 'Go Booking App',
+    image:
+      'http://www.recruitfirst.com.cn/wp-content/uploads/2021/04/RecruitFirst.png',
+    tool: 'Go, PostgreSQL, React',
+  },
+  {
+    title: 'Game of ChamberCrawler3000+',
+    image:
+      '../img/cc3k.png',
+    tool: 'C++',
+  },
+];
+
+const useStyles = createStyles((theme) => ({
+  card: {
+    transition: 'transform 150ms ease, box-shadow 150ms ease',
+    '&:hover': {
+      transform: 'scale(1.03)',
+      boxShadow: theme.shadows.md,
+    },
+  },
+
+  title: {
+    fontFamily: `Arial`,
+    fontWeight: 600,
+    fontSize: 18,
+  },
+}));
 
 export const Project = () => {
-  const cc3k = require('../img/cc3k.png');
-  const shop = require('../img/shop.jpeg');
-  const reversi = require('../img/reversi.png');
-  const ucharity = require('../img/ucharity.png');
+  const { classes } = useStyles();
 
-  const openShop = () => {
-    return window.open('https://github.com/daisyyedda/Online-Shop-App.git', "_blank");
-  }
+  const cards = mockdata.map((article) => (
+    <Card key={article.title} p="md" radius="md" component="a" href="#" className={classes.card}>
+      <AspectRatio ratio={1900 / 1300}>
+        <Image src={article.image}/>
+      </AspectRatio>
+      <Text color="dimmed" size="15px" mt="md" fontFamily="Arial">
+        {article.tool}
+      </Text>
+      <Text className={classes.title} mt={5}>
+        {article.title}
+      </Text>
 
-  const openCC3K = () => {
-    return window.open('https://github.com/daisyyedda/ChamberCrawler3000.git', "_blank");
-  }
-
-  const openReversi = () => {
-    return window.open('https://github.com/daisyyedda/Reversi.git', "_blank");
-  }
-
-  const openUCharity = () => {
-    return window.open('https://github.com/daisyyedda/UCharity.git', "_blank");
-  }
+    </Card>
+  ));
 
   return (
-    <div className='content animate__animated animate__bounceInUp'>
-      <h2>I enjoy doing side projects to enhance my knowledge in full-stack development and empower the communities.</h2>
-      <h3>Click the pictures to view project repositories.</h3>
-      <Stack gap={200}>
-        <div className="bg-light border">
-          <h3 className='pos'>Online Shop App (Node.js /  EJS  /  MongoDB)</h3>
-          <img className="project" alt="Online Shop App Snapshot" src={shop} onClick={openShop}></img> 
-        </div>
-        <div className="bg-light border">
-          <h3 className='pos'>Game of ChamberCrawler3000+ (C++) </h3>
-          <img className= "project" alt="CC3k+ Snapshot" src={cc3k} onClick={openCC3K}></img>
-        </div>
-        <div className="bg-light border">
-          <h3 className='pos'> Game of Reversi (C++)</h3>
-          <img className="project" alt="Reversi Snapshot" src={reversi} onClick={openReversi}></img>
-        </div>
-        <div className="bg-light border">
-          <h3 className='pos'>UCharity Website (HTML / CSS / JavaScript) </h3> 
-          <img className="project" alt="UCharity Logo" src={ucharity} onClick={openUCharity}>
-          </img>
-        </div>
-      </Stack>
-      <br/><br/><br/>
-      <Contact />
+    <div style={{fontFamily: "Arial", marginTop: "5%"}}>
+      <h1>Side projects my peers and I did.</h1>
+      <p style={{fontSize: "20px"}}>Machine Learning&nbsp;&nbsp;|&nbsp;&nbsp;Full Stack&nbsp;&nbsp;|&nbsp;&nbsp;API Development</p>
+      <Container class="animate__animated animate__fadeInLeft" style={{paddingTop: "5%", marginRight: "15%", marginLeft: "15%"}}>
+      <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+        {cards}
+      </SimpleGrid>
+    </Container>
+    <br/><br/><br/>
+    <Contact />
     </div>
   );
 }
