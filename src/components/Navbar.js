@@ -10,7 +10,7 @@ export const Navbar = () => {
   }
 
   const toResume = () => {
-    return window.open('https://pdfhost.io/v/CHvvfaEc0_Chun_Ye_Resume');
+    return window.open('https://pdfhost.io/v/K.MsdXpod_Chun_Ye_resume');
   }
 
   return (  
