@@ -17,11 +17,11 @@ export const Navbar = () => {
     <div className="navbar">
       <div className="links" style={{fontFamily: 'Arial'}}>
         <Link to="/" style={{textDecoration: "none", color: "black"}} onClick={underLine}>Home</Link>
-        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <Link to="/coop" style={{textDecoration: "none", color: "black"}} onClick={underLine}>Experience</Link>
-        &nbsp;&nbsp;&nbsp;
-        <Link to="/photo" style={{textDecoration: "none", color: "black"}} onClick={underLine}>Photography</Link>
-        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to="/photo" style={{textDecoration: "none", color: "black"}} onClick={underLine}>Gallery</Link>
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <Link onClick={toResume} style={{textDecoration: "none", color: "black"}}>Resume</Link>
       </div>
     </div>

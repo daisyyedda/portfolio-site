@@ -1,4 +1,5 @@
-import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsCameraReelsFill, BsPaletteFill } from "react-icons/bs";
+import { AiOutlineCamera } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
 export const Contact = () => {
@@ -10,8 +11,13 @@ export const Contact = () => {
   }
 
   const toInstagram = () => {
-    return window.open('https://www.instagram.com/wizmyphone/');
+    return window.open('https://www.instagram.com/daidai_shots/');
   }
+
+  const toInstagram2 = () => {
+    return window.open('https://www.instagram.com/daidai_arts/');
+  }
+
 
   const toEmail = () => {
     return window.open('mailto:c42ye@uwaterloo.ca');
@@ -23,7 +29,9 @@ export const Contact = () => {
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <BsLinkedin onClick={toLinkedIn} style={{fontSize: "20px"}}/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <BsInstagram onClick={toInstagram} style={{fontSize: "20px"}}/>
+    <BsCameraReelsFill onClick={toInstagram} style={{fontSize: "20px"}}/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <BsPaletteFill onClick={toInstagram2} style={{fontSize: "20px"}}/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <MdEmail onClick={toEmail} style={{fontSize: "20px"}}/>
     <p style={{fontSize: "14px"}}>
