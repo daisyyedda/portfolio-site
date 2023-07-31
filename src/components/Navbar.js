@@ -9,10 +9,6 @@ export const Navbar = () => {
     e.target.style.borderBottom = "2px solid black";
   }
 
-  const toResume = () => {
-    return window.open('https://pdfhost.io/v/K.MsdXpod_Chun_Ye_resume');
-  }
-
   return (  
     <div className="navbar">
       <div className="links" style={{fontFamily: 'Arial'}}>
@@ -22,7 +18,7 @@ export const Navbar = () => {
         &nbsp;&nbsp;&nbsp;&nbsp;
         <Link to="/photo" style={{textDecoration: "none", color: "black"}} onClick={underLine}>Gallery</Link>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <Link onClick={toResume} style={{textDecoration: "none", color: "black"}}>Resume</Link>
+        <Link to="/pieces" style={{textDecoration: "none", color: "black"}} onClick={underLine}>Pieces</Link>
       </div>
     </div>
   );

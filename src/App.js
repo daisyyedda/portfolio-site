@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Photography } from './pages/Photography';
 import { About } from './pages/About';
 import { Coop } from './pages/Coop';
+import { Pieces } from './pages/Pieces';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={< About />} />
           <Route path="/photo" element={< Photography />} />
           <Route path="/coop" element={< Coop />} />
+          <Route path="/pieces" element={< Pieces />} />
         </Routes>
       </Router>
     </div>
