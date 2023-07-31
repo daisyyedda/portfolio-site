@@ -7,12 +7,14 @@ import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio } f
 
 const mockdata = [
   {
-    title: 'Some thoughts on gender fluidity.',
-    date: '2023/07/30',
+    title: 'Some thoughts on gender fluidity. [editing]',
+    date: '2022/03/31',
+    id: '2'
   },
   {
     title: 'Hi! Welcome to my website.',
     date: '2023/07/30',
+    id: '1'
   },
 ];
 
@@ -36,7 +38,7 @@ export const Pieces = () => {
   const { classes } = useStyles();
 
   const cards = mockdata.map((article) => (
-    <Card key={article.title} p="md" radius="md" component="a" href="#" className={classes.card}>
+    <Card key={article.title} p="md" radius="md" component="a" href="#{$id}" className={classes.card}>
 
       <Text color="dimmed" size="15px" transform="uppercase" mt="md" fontFamily="Arial">
         {article.date}
